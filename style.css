@@ -1,0 +1,140 @@
+/* === IMPORT FONT === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* === GLOBAL SETTINGS === */
+html, body, [class*="css"] {
+    font-family: 'Poppins', sans-serif;
+    color: #000000 !important;
+}
+
+/* === HEADERS === */
+h1 {
+    color: #38306b !important;
+    font-weight: 800 !important;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+}
+
+h2 {
+    color: #483d8b !important;
+    border-bottom: 3px solid #6a5acd;
+    padding-bottom: 10px;
+    font-weight: 700 !important;
+}
+
+h3 {
+    color: #1f2937 !important;
+    font-weight: 600 !important;
+}
+
+/* === SIDEBAR BACKGROUND === */
+[data-testid="stSidebar"] {
+    background-color: #f8f9fa !important; /* Pastikan background terang */
+    border-right: 2px solid #d1d5db;
+}
+
+/* Judul "Petunjuk Menu" */
+[data-testid="stSidebar"] h1 {
+    color: #111827 !important;
+    font-size: 1.6rem !important;
+}
+
+/* === PERBAIKAN KHUSUS MENU (RADIO BUTTON) === */
+/* Ini menargetkan teks pilihan menu (Klasifikasi, Tentang, dll) secara spesifik */
+[data-testid="stSidebar"] .stRadio div[role="radiogroup"] label p {
+    color: #101010 !important; /* HITAM PEKAT */
+    font-weight: 600 !important; /* SEMI BOLD */
+    font-size: 15px !important;
+}
+
+/* Warna saat menu disorot mouse (Hover) */
+[data-testid="stSidebar"] .stRadio div[role="radiogroup"] label:hover p {
+    color: #483d8b !important; /* Ungu */
+}
+
+/* Judul kecil "Pilih Menu" di atas radio button */
+.stRadio > label {
+    font-weight: bold !important;
+    color: #38306b !important;
+    font-size: 16px !important;
+}
+
+/* === ALERTS (BOX HASIL & INFO) === */
+.stAlert {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 15px !important;
+    border: 1px solid #d1d5db !important;
+    padding: 20px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stAlert p {
+    color: #000000 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+.stAlert[data-baseweb="notification"][kind="info"] { border-left: 6px solid #2980b9 !important; }
+.stAlert[data-baseweb="notification"][kind="success"] { border-left: 6px solid #27ae60 !important; }
+.stAlert[data-baseweb="notification"][kind="warning"] { border-left: 6px solid #f39c12 !important; }
+
+/* === FILE UPLOADER === */
+[data-testid="stFileUploader"] {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 20px;
+    border: 2px dashed #483d8b;
+}
+
+/* === BUTTONS === */
+.stButton > button {
+    background-color: #483d8b !important;
+    color: white !important;
+    font-weight: bold !important;
+    border-radius: 10px !important;
+    border: none !important;
+    padding: 0.6rem 1.2rem !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.stButton > button:hover {
+    background-color: #6a5acd !important;
+    transform: scale(1.03);
+}
+
+/* === TABS === */
+button[data-baseweb="tab"] {
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000000 !important; /* Pastikan tab hitam */
+}
+
+/* === BOX TENTANG APLIKASI === */
+.about-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #e5e7eb;
+    border-left: 8px solid #483d8b;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about-box h4 {
+    color: #483d8b;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.about-box ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.about-box li {
+    margin-bottom: 8px;
+    color: #000000; /* List item hitam */
+}
