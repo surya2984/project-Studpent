@@ -1,0 +1,7 @@
+pandas           : 1.5.3
+numpy            : 1.24.3
+pip              : 23.2.1
+Streamlit
+Pillow
+Scikit Learn
+Tensor Flow = 2.20
