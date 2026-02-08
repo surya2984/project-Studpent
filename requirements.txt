@@ -4,3 +4,4 @@ streamlit
 Pillow
 scikit-learn
 tensorflow-cpu
+protobuf==3.20.3
